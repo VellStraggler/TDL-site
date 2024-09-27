@@ -48,24 +48,47 @@ function App() {
       <header class = "space"></header>
       <body class = "body">
         <div class="img-phrase-pair">
-          <h1 class="phrase">Put a motto here!</h1>
+          <div class ="phrase">
+            <h1>We are a family</h1>
+            <h2>A company that builds from the heart</h2>
+          </div>
           <img className="img" alt="show-the-back" src="photos/TDL-Manti_2.14.1.png"></img>
-          <p class = "para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class = "para">When our Founder Dan Lokeni tragically lost his son, Ta'imua'iao Dayne Lokeni (TDL), he developed a vision 
+            of a company that could lift his brothers and sisters and honor the memory of his son. When you are part of TDL, you are 
+            part of something bigger than yourself, and every job helps us achieve a greater purpose. 
+            At TDL, we work for eachother. The company acts like an employee-owned non-profit and distributes the earnings equitably. 
+            A portion of our earnings go to philanthropic projects in our home country to alleviate poverty. This incentivizes our team 
+            to do their best work and deliver the project faster, benefiting all parties. Unlike traditional steel erectors who are 
+            incentivized to do the minimum amount of work in an hour, we are motivated to save manhours by working harder, smarter, 
+            and more effectively. Truly, this unselfish way of doing business has the power to revolutionize the industry.
+            Sometimes, out of great pain emerges a new begining. TDL is making big waves not only here at work but back in Samoa. 
+            Join us on our journey and come be part of something bigger. </p>
         </div>
         <div class="img-phrase-pair">
           <h1 class ="phrase">About Us</h1>
           <img class="img" alt="say-hi" src="photos/TDL-Manti_2.9.1.png"></img>
-          <p class ="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p class ="para">TDL is an experienced steel erection company in Utah.
+              Our company offers a combined work experience of over 15 years in the structural steel erection trade. Our structural 
+              steel work relates to commercial buildings and industrial facilities as well as public works. Our experience has 
+              included, but is not limited to the following: erection of steel joists, girders, beams, cross sections, and other 
+              structural members for buildings of various sizes and square footage. We strive to provide the kind of quality, time, 
+              effort, experience and personnel that our general contractors look for in a safe and qualified steel erector.
+              From erecting new metal buildings and steel structures to repairing existing structures, we have decades of experience 
+              to deliver the results for your erection projects.</p>
         </div>
         <div class="img-phrase-pair">
-          <h1 class = "phrase">Our Latest Project</h1>
-          <img class="img" alt="say-hi" src="photos/library.jpg"></img>
-          <p class = "para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h1 class = "phrase">Our Latest Projects</h1>
+          <img class="img" alt="say-hi" src="photos/library-full.jpg"></img>
+          <p class = "para"></p>
         </div>
         <div class="img-phrase-pair">
           <h1 class = "phrase">Contact Us</h1>
           <img class="img" alt="say-hi" src="photos/TDL-Manti_1.75.1.png"></img>
-          <p class="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <div class ="footer-para">
+            <h3>Located in: West Jordan, UT 84081, USA</h3>
+            <h3>Call us: (801) 259-6255</h3>
+            <h3>Email us: tdl23group@gmail.com</h3>
+          </div>
         </div>
       </body>
       <footer className="App-footer">
