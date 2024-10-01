@@ -32,17 +32,17 @@ function App() {
   }, []);
 
   return (
-    <div class="App">
+    <div class="App" id = "home-section">
       <header class="App-header" ref={headerRef} style={{height: "300px"}}>
         <div class="logo-side" ref={logoContainer}>
           <img src="tdllogos\TDL-logo-color-cropped.png" className="App-logo" alt="logo" />
           <img src="tdllogos\logo-words-only.png" className="App-logo-words" alt="logo-words" />
         </div>
         <div class="nav-items">
-          <a class="a" href="/">Home</a>
-          <a class="a" href="/">About Us</a>
-          <a class="a" href="/">Projects</a>
-          <a class="contact" href="/"><span class="contact-help"></span>Contact Us</a>
+          <a class="a" href="#home-section">Home</a>
+          <a class="a" href="#about-section">About Us</a>
+          <a class="a" href="#project-section">Projects</a>
+          <a class="contact" href="#contact-section"><span class="contact-help"></span>Contact Us</a>
         </div>
       </header>
       <header class = "space"></header>
@@ -52,7 +52,7 @@ function App() {
             <h1>We are a family</h1>
             <h2>A company that builds from the heart</h2>
           </div>
-          <img className="img" alt="show-the-back" src="photos/TDL-Manti_2.14.1.png"></img>
+          <img className="img" alt="show-the-back" src="photos/the-back.png"></img>
           <p class = "para">When our Founder Dan Lokeni tragically lost his son, Ta'imua'iao Dayne Lokeni (TDL), he developed a vision 
             of a company that could lift his brothers and sisters and honor the memory of his son. When you are part of TDL, you are 
             part of something bigger than yourself, and every job helps us achieve a greater purpose. 
@@ -64,9 +64,9 @@ function App() {
             Sometimes, out of great pain emerges a new begining. TDL is making big waves not only here at work but back in Samoa. 
             Join us on our journey and come be part of something bigger. </p>
         </div>
-        <div class="img-phrase-pair">
-          <h1 class ="phrase">About Us</h1>
-          <img class="img" alt="say-hi" src="photos/TDL-Manti_2.9.1.png"></img>
+        <div class="img-phrase-pair" id="about-section">
+          <h1 class="phrase">About Us</h1>
+          <img class="img" alt="say-hi" src="photos/close-stare.png"></img>
           <p class ="para">TDL is an experienced steel erection company in Utah.
               Our company offers a combined work experience of over 15 years in the structural steel erection trade. Our structural 
               steel work relates to commercial buildings and industrial facilities as well as public works. Our experience has 
@@ -76,14 +76,14 @@ function App() {
               From erecting new metal buildings and steel structures to repairing existing structures, we have decades of experience 
               to deliver the results for your erection projects.</p>
         </div>
-        <div class="img-phrase-pair">
-          <h1 class = "phrase">Our Latest Projects</h1>
-          <img class="img" alt="say-hi" src="photos/library-full.jpg"></img>
+        <div class="img-phrase-pair" id="project-section">
+          <h1 class="phrase">Our Latest Projects</h1>
+          <img class="img" alt="say-hi" src="photos/project-photos/library-full.jpg"></img>
           <p class = "para"></p>
         </div>
-        <div class="img-phrase-pair">
+        <div class="img-phrase-pair" id="contact-section">
           <h1 class = "phrase">Contact Us</h1>
-          <img class="img" alt="say-hi" src="photos/TDL-Manti_1.75.1.png"></img>
+          <img class="img" alt="say-hi" src="photos/look-up.png"></img>
           <div class ="footer-para">
             <h3>Located in: West Jordan, UT 84081, USA</h3>
             <h3>Call us: (801) 259-6255</h3>
