@@ -34,66 +34,68 @@ function App() {
   return (
     <div class="App" id = "home-section">
       <header class="App-header" ref={headerRef} style={{height: "300px"}}>
-        <div class="logo-side" ref={logoContainer}>
-          <img src="tdllogos\TDL-logo-color-cropped.png" className="App-logo" alt="logo" />
-          <img src="tdllogos\logo-words-only.png" className="App-logo-words" alt="logo-words" />
-        </div>
-        <div class="nav-items">
-          <a class="a" href="#home-section">Home</a>
-          <a class="a" href="#about-section">About Us</a>
-          <a class="a" href="#project-section">Projects</a>
-          <a class="contact" href="#contact-section"><span class="contact-help"></span>Contact Us</a>
+        <div class="inner-header">
+          <div class="logo-side" ref={logoContainer}>
+            <img src="tdllogos\TDL-logo-color-cropped.png" className="App-logo" alt="logo" />
+            <img src="tdllogos\logo-words-only.png" className="App-logo-words" alt="logo-words" />
+          </div>
+          <div class="nav-items">
+            <a class="a" href="#home-section">Home</a>
+            <a class="a" href="#about-section">About Us</a>
+            <a class="a" href="#project-section">Projects</a>
+            <a class="contact" href="#contact-section"><span class="contact-help"></span>Contact Us</a>
+          </div>
         </div>
       </header>
-      <header class = "space"></header>
       <body class = "body">
-        <div class="img-phrase-pair">
-          <div class ="phrase">
-            <h1>We are a family</h1>
-            <h2>A company that builds from the heart</h2>
+        <div class = "inner-body">
+          <div class = "space"></div>
+          <div class="img-phrase-pair">
+            <div class ="phrase">
+              <h1>We Are A Family</h1>
+              <h2>A company that builds from the heart</h2>
+            </div>
+            <img className="img" alt="show-the-back" src="photos/the-back.png"></img>
+            <p class = "para">When our founder, Dan Lokeni, tragically lost his son, Ta'imua'iao Dayne Lokeni (TDL), he envisioned a 
+              company that could uplift his community and honor his son's memory. At TDL, you're a part of something bigger, where 
+              every project serves a greater purpose. </p>
+            <p class = "para">We operate like an employee-owned non-profit, distributing earnings equitably and 
+              supporting philanthropic projects to fight poverty in Samoa. This motivates our team to work smarter and faster, 
+              benefiting everyone. Unlike other steel erectors, we're driven to maximize efficiency.</p>
           </div>
-          <img className="img" alt="show-the-back" src="photos/the-back.png"></img>
-          <p class = "para">When our Founder Dan Lokeni tragically lost his son, Ta'imua'iao Dayne Lokeni (TDL), he developed a vision 
-            of a company that could lift his brothers and sisters and honor the memory of his son. When you are part of TDL, you are 
-            part of something bigger than yourself, and every job helps us achieve a greater purpose. 
-            At TDL, we work for eachother. The company acts like an employee-owned non-profit and distributes the earnings equitably. 
-            A portion of our earnings go to philanthropic projects in our home country to alleviate poverty. This incentivizes our team 
-            to do their best work and deliver the project faster, benefiting all parties. Unlike traditional steel erectors who are 
-            incentivized to do the minimum amount of work in an hour, we are motivated to save manhours by working harder, smarter, 
-            and more effectively. Truly, this unselfish way of doing business has the power to revolutionize the industry.
-            Sometimes, out of great pain emerges a new begining. TDL is making big waves not only here at work but back in Samoa. 
-            Join us on our journey and come be part of something bigger. </p>
-        </div>
-        <div class="img-phrase-pair" id="about-section">
-          <h1 class="phrase">About Us</h1>
-          <img class="img" alt="say-hi" src="photos/close-stare.png"></img>
-          <p class ="para">TDL is an experienced steel erection company in Utah.
-              Our company offers a combined work experience of over 15 years in the structural steel erection trade. Our structural 
-              steel work relates to commercial buildings and industrial facilities as well as public works. Our experience has 
-              included, but is not limited to the following: erection of steel joists, girders, beams, cross sections, and other 
-              structural members for buildings of various sizes and square footage. We strive to provide the kind of quality, time, 
-              effort, experience and personnel that our general contractors look for in a safe and qualified steel erector.
-              From erecting new metal buildings and steel structures to repairing existing structures, we have decades of experience 
-              to deliver the results for your erection projects.</p>
-        </div>
-        <div class="img-phrase-pair" id="project-section">
-          <h1 class="phrase">Our Latest Projects</h1>
-          <img class="img" alt="say-hi" src="photos/project-photos/library-full.jpg"></img>
-          <p class = "para"></p>
-        </div>
-        <div class="img-phrase-pair" id="contact-section">
-          <h1 class = "phrase">Contact Us</h1>
-          <img class="img" alt="say-hi" src="photos/look-up.png"></img>
-          <div class ="footer-para">
-            <h3>Located in: West Jordan, UT 84081, USA</h3>
-            <h3>Call us: (801) 259-6255</h3>
-            <h3>Email us: tdl23group@gmail.com</h3>
+          <div class="img-phrase-pair" id="about-section">
+            <h1 class="phrase">About Us</h1>
+            <img class="img" alt="say-hi" src="photos/the-gang.png"></img>
+            <p class ="para">TDL is a trusted steel erection company in Utah with over 15 years of experience in the structural 
+              steel trade. We specialize in commercial, industrial, and public works projects, handling everything from steel joists 
+              and girders to beams and cross-sections for buildings of all sizes. 
+            </p>
+            <p class = "para">We are committed to delivering high-quality, safe, 
+              and efficient work that meets the expectations of our general contractors. Whether constructing new steel structures 
+              or repairing existing ones, our skilled team brings the expertise and dedication to ensure your project's success.</p>
           </div>
+          <div class="img-phrase-pair" id="project-section">
+            <h1 class="phrase">Our Latest Projects</h1>
+            <img class="img" alt="say-hi" src="photos/project-photos/library-full.jpg"></img>
+            <p class = "para"></p>
+          </div>
+          <div class="img-phrase-pair" id="contact-section">
+            <div class = "phrase">
+              <h1>Contact Us</h1>
+              <div class ="footer-para">
+                <h3>Located in: West Jordan, UT 84081, USA</h3>
+                <h3>Call us: (801) 259-6255</h3>
+                <h3>Email us: tdl23group@gmail.com</h3>
+              </div>
+            </div>
+            <img class="img" alt="say-hi" src="photos/look-up.png"></img>
+          </div>
+          <div class = "end-space"></div>
         </div>
       </body>
       <footer className="App-footer">
-        <div></div>
-        <div>
+        <p class="copyright">© David Wells 2024. All Rights Reserved. **Disclaimer: This is a site proposal, not an official site of TDL.**</p>
+        <div class="media-links">
           <a class ="icon" href = "https://www.facebook.com/TDLGROUP/">
             <img class="icon" alt="facebook" src="tdllogos/facebook.jpg"></img>
           </a>

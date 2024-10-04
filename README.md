@@ -28,5 +28,3 @@ Time alotted to project as of 9/27: 8 hours
 ## features that need help:
 - color palette
 - section paragraph and header placement
-- white background when scrolling: This should change to follow the color palette or the color palette should change to follow this.
-- Apply a better image for the "About Us" section
