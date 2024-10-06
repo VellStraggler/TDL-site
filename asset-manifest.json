@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/TDL-site/static/css/main.6f2e33a1.css",
+    "main.js": "/TDL-site/static/js/main.d9898f3e.js",
+    "static/js/453.cbec5074.chunk.js": "/TDL-site/static/js/453.cbec5074.chunk.js",
+    "index.html": "/TDL-site/index.html",
+    "main.6f2e33a1.css.map": "/TDL-site/static/css/main.6f2e33a1.css.map",
+    "main.d9898f3e.js.map": "/TDL-site/static/js/main.d9898f3e.js.map",
+    "453.cbec5074.chunk.js.map": "/TDL-site/static/js/453.cbec5074.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f2e33a1.css",
+    "static/js/main.d9898f3e.js"
+  ]
+}
