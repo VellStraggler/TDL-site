@@ -231,6 +231,7 @@ html, body {
 .bottom-text-clear, .mid-text-clear {
   background-color: rgba(79, 79, 87, 0.718);
   backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
 }
 .mid-text-clear {
   border-radius: 50px;
