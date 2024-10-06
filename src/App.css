@@ -3,6 +3,8 @@
   border-style: none;
   border-width: 1px;
   font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+
+  scroll-margin-top: 100px;
 }
 .App {
 
@@ -14,23 +16,25 @@
   --color-c: #a2a6b3;
   --color-d: #62646a; /*background color*/
   --color-e: #cde89f;
-  --color-e-clear: #CDE89F9E;
+  --color-e-clear: #56833aba;
   --color-e-dark:#7F9063;
   --clear: #00000000;
 
   background-color: var(--color-d);
 }
 html, body {
-  background-color: black;
+  background-color: white;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .App-logo {
-  height: 200px;
+  height: 170px;
   transition: height 0.8s ease;
 }
 .App-logo-words {
-  height: 30px;
+  height: 40px;
+  padding-top: 5px;
 }
 .logo-side {
   grid-column: 1/2;
@@ -50,16 +54,47 @@ html, body {
 }
 
 .nav-items {
-  display:grid;
-  grid-column:2/3;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  align-items:end;
+  display:grid; /*set to grid so the contact button is shiny*/
+  grid-template-columns: repeat(5, 1fr);
+  align-items:center;
   justify-items: end;
   padding-right: 5px; /*To account for contact border width*/
+
+  transition: 0.8s;
 }
-@media (max-width: 1150px) {
+@media (max-width: 1400px) {
+  .App-logo-words {
+    display:none;
+  }
+  .logo-side {
+    justify-self: center;
+  }
+  .App-header {
+    width: 98%;
+    padding-right: 1%;
+    padding-left: 1%;
+  }
+}
+@media (min-width: 1400px) {
+  .App-header {
+    width: 82%;
+    padding-right: 9%;
+    padding-left: 9%;
+  }
+}
+@media (max-width: 1050px) {
+  .nav-items {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 800px) {
   .nav-items {
     grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 500px) {
+  .nav-items {
+    grid-template-columns: 1fr;
   }
 }
 .a,.contact {
@@ -69,11 +104,8 @@ html, body {
   color: black;
   text-decoration:none;
   text-align:center;
-  font-size: 26px;
-  width: 130px;
-  height: 30px;
   font-size: calc(10px + 2vmin);
-  width: calc(100px + 10vmin);
+  width: calc(100px + 7vmin);
   height: calc(15px + 2vmin);
   border-style: solid;
   border-width: 5px;
@@ -81,9 +113,10 @@ html, body {
 }
 .a {
   border-width: 2px;
+  width: calc(100px + 7vmin);
 }
 .a:hover {
-  background-image: radial-gradient(var(--clear) 0%, var(--color-e-clear) 99%);
+  background-image: radial-gradient(var(--clear) 50%, var(--color-e-clear) 100%);
   border-color: var(--color-e-clear);
 }
 
@@ -116,11 +149,6 @@ html, body {
   display:flex;
   align-items: center;
   justify-content: center;
-  
-
-  width: 82%;
-  padding-left: 9%;
-  padding-right: 9%;
 
   transition: 0.8s;
 }
@@ -136,34 +164,97 @@ html, body {
   grid-column: 1/3;
   grid-row: 1/2;
   width: 100%;
-  border-color: var(--color-c);
-  border-style: solid none;
-  border-width: 3px;
-
 }
-.phrase {
+/* #about-section, #services-setion, #project-section,
+#contact-section {
+  background-image: url('the-gang.png');
+  height: 800px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+} */
+
+.left-phrase, .corner-phrase, .right-phrase, .center-phrase {
   z-index: 500;
   grid-row: 1/2;
   grid-column: 1/2;
   text-align: left;
   text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.733);
-  /* background-color: var(--color-d); */
   color:white;
-  padding-left: 5%;
+  padding-left: 9%;
+  padding-right: 9%;
 }
-.para{
-  z-index: 500;
-  grid-column: 1/3;
+.corner-phrase {
+  grid-column: 1/2;
+  display:flex;
   text-align: left;
-  background-color: var(--color-d);
+  align-items: top;
+}
+.center-phrase {
+  grid-column: 1/3;
+  display: flex;
+  text-align: center;
+  align-items: top;
+  justify-content: center;
+}
+.right-phrase {
+  grid-column: 2/3;
+  display:flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+.left-phrase {
+  justify-content: center;
+  align-items: left;
+  display: flex;
+  flex-direction: column;
+}
+.bottom-text-clear, .mid-text-clear, .right-panel-text {
+  z-index: 490;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  width: 61.76%;
+  align-self: flex-end;
+  height:fit-content;
+  flex-direction: column;
+  text-align: left;
+  justify-self: center;
   color:white;
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 0px;
+  border-radius:50px 50px 0px 0px;
+}
+.bottom-text-clear, .mid-text-clear {
+  background-color: rgba(79, 79, 87, 0.718);
+  backdrop-filter: blur(3px);
+}
+.mid-text-clear {
+  border-radius: 50px;
+  margin-bottom: 24%;
+}
+.right-panel-text {
+  width: fit-content;
+  text-align: right;
+  font-size: calc(10px + 5vmin);
+  grid-column: 2/3;
+  align-self: center;
+  margin-left: 50px;
+}
+li {
+  margin: calc(10px + 8vmin);
+  list-style-type: none;
+  text-shadow: 10px 0px 3px rgba(0, 0, 0, 0.733);
+  margin-left: 50px;
+  text-align: left;
+
 }
 .img-phrase-pair {
   display:grid;
-  grid-template-columns: 1fr 1.615fr; /*golden ratio*/
+  grid-template-columns: 1fr 1fr; /*golden ratio is 1.615*/
 }
 
 .footer-para {
@@ -176,49 +267,54 @@ html, body {
   width: fit-content;
   padding-right:5%;
   padding-left:5%;
-  margin-left: 5%;
-  margin-right: 5%;
+  align-self: center;
   border-color: black;
   border-width: 2px;
   border-style: solid;
+  font-size: calc(10px + 1vmin);
 }
-
-
 .body {
   display:grid;
-  padding-left: 9%;
-  padding-right: 9%;
-  width: 82%;
 }
 .inner-body {
-  background-color: var(--color-d);
+  background-color: white;
+  
+  width: 100%;
 }
 .space {
-  height: 320px;
-  background-image: linear-gradient(to top, var(--color-d) 0%, black 50%);
+  height: 0px;
+  background-image: linear-gradient(to top, white 0%, white 50%);
 }
 .end-space {
-  height: 100px;
+  height: 0px;
   background-image: linear-gradient(to bottom, var(--color-d) 0%, black 50%);
 }
 h1 {
-  font-size: calc(10px + 4vmin);
-  margin-left: 4%;
-  margin-right: 4%;
+  font-size: calc(10px + 9vmin);
   margin-bottom: 0px;
 }
+.h1-contact {
+  color: black;
+  text-shadow: none;
+  margin-bottom: 0px;
+  
+}
 h2 {
-  margin-top: 3px;
+  font-size: calc(10px + 6vmin);
+  text-shadow: 10px 0px 3px rgba(0, 0, 0, 0.733);
+}
+h3 {
+  font-size: calc(10px + 2vmin);
+  text-shadow: 5px 0px 3px rgba(0, 0, 0, 0.733);
 }
 p {
-  font-size: calc(10px + 1.5vmin);
+  font-size: calc(10px + 1.7vmin);
 }
 .App-footer {
   z-index: 1000;
   position: fixed;
   display:grid;
   grid-template-columns: 2fr 1fr;
-  /* justify-content: right; */
   
   font-size: calc(10px + 2vmin);
   background-color: white;
