@@ -1,5 +1,4 @@
 # TDL Website
-Time alotted to project as of 9/27: 8 hours
 
 ## completed features:
 - fluid logo
